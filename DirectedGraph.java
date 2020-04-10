@@ -128,11 +128,26 @@ public class DirectedGraph {
 			return 0;
 		}
 		
-		
+
+		if(root.getCoverSize() != 0 ){
+			return root.getCoverSize();
+		}
+
+		//calculate the vortex cover when v(root) is included 
+		for(int i=0; i<getGraphSize(); i++){
+
+
+		}
+
+
+		//calcualte the vertex cover when v(root) is not included 
+		for(int i=0; i<getGraphSize(); i++){
+			
+		}
 		
 
-		//YOUR CODE HERE
-		return -1;
+		// the minimum of the two values is the vertes cover
+		return Math.min(including,notincluding);
 
 	}// vCover
 
